@@ -2,7 +2,7 @@
 
 // var synth = apiReader("data.js", "buzzFunk");
 
-apiReader.loadPatch("data.js", "buzzFunk")
+var synth = apiReader("data.js", "buzzFunk")
 
 
 $(function() {
@@ -12,14 +12,14 @@ $(function() {
         console.log($(this).index('.key'));
         var index = $(this).index('.key');
 
-        apiReader.play(index);
+        synth.play(index);
 
     });
 
 
     $(".key").on("mouseout", function() {
 
-        apiReader.stop();
+        synth.stop();
     });
 
 
