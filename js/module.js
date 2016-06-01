@@ -8,15 +8,9 @@ var apiReader = function(a, b) {
 
         $(function() {
 
-            $.getJSON(directory, function() {
-
-
-            }).done(function(data) {
-
+            $.getJSON(directory, function(data) {
                 app.patchParams = data[patchName];
-
-
-            });
+            })
 
         });
 
